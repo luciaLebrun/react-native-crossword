@@ -1,0 +1,9 @@
+node_modules/
+lib/
+example/node_modules/
+example/ios/Pods/
+example/android/.gradle/
+example/android/build/
+*.tgz
+.yarn/
+yarn-error.log
