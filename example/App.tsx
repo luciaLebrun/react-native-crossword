@@ -60,7 +60,10 @@ export default function App() {
         </Text>
 
         <View style={styles.buttons}>
-          <TouchableOpacity style={styles.btn} onPress={() => crosswordRef.current?.reset()}>
+          <TouchableOpacity
+            style={styles.btn}
+            onPress={() => crosswordRef.current?.reset()}
+          >
             <Text style={styles.btnText}>Reset</Text>
           </TouchableOpacity>
           <TouchableOpacity
@@ -78,7 +81,10 @@ export default function App() {
           >
             <Text style={styles.btnText}>Check</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.btn} onPress={() => setUseDark((v) => !v)}>
+          <TouchableOpacity
+            style={styles.btn}
+            onPress={() => setUseDark((v) => !v)}
+          >
             <Text style={styles.btnText}>{useDark ? 'Light' : 'Dark'}</Text>
           </TouchableOpacity>
         </View>
@@ -107,9 +113,19 @@ const styles = StyleSheet.create({
   root: { flex: 1 },
   safe: { flex: 1, backgroundColor: '#f5f5f5', padding: 16 },
   safeDark: { backgroundColor: '#0f0f23' },
-  title: { fontSize: 20, fontWeight: '700', textAlign: 'center', marginBottom: 12 },
+  title: {
+    fontSize: 20,
+    fontWeight: '700',
+    textAlign: 'center',
+    marginBottom: 12,
+  },
   titleDark: { color: '#eaeaea' },
-  buttons: { flexDirection: 'row', justifyContent: 'center', gap: 8, marginBottom: 12 },
+  buttons: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    gap: 8,
+    marginBottom: 12,
+  },
   btn: {
     backgroundColor: '#007AFF',
     paddingHorizontal: 14,
